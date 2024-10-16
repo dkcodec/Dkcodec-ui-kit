@@ -1,0 +1,45 @@
+{
+  "name": "dkcodec-ui-kit",
+  "version": "1.0.5",
+  "description": "very simple but useful ui kit",
+  "main": "./dist/index.js",
+  "scripts": {
+    "pub": "npx webpack && npm version patch && npm publish",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "Dkcodec",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/addon-interactions": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/addon-onboarding": "^8.3.5",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.3.5",
+    "@storybook/react": "^8.3.5",
+    "@storybook/react-webpack5": "^8.3.5",
+    "@storybook/test": "^8.3.5",
+    "@types/mdx": "^2.0.13",
+    "@types/react": "^18.3.11",
+    "clsx": "^2.1.1",
+    "css-loader": "^7.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^8.3.5",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "files": [
+    "dist"
+  ]
+}
