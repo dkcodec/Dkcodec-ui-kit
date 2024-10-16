@@ -20,9 +20,9 @@ npm install dkcodec-ui-kit
 
 ## 🖼️ Components
 
-### MyButton
+### Button2D, Toggle2D
 
-The `MyButton` component is a flexible and customizable button with several style options, built using React. It supports different sizes, colors, themes, and additional styles. Here's how to use it.
+The `Button2D` component is a flexible and customizable button with several style options, built using React. It supports different sizes, colors, themes, and additional styles. Here's how to use it.
 
 #### ✨ Features
 
@@ -34,19 +34,19 @@ The `MyButton` component is a flexible and customizable button with several styl
 
 #### 📋 Props
 
-| Prop              | Type                                            | Default   | Description                                                   |
-| ----------------- | ----------------------------------------------- | --------- | ------------------------------------------------------------- |
-| `textColor`       | `string`                                        | `black`   | Custom color for the button text                              |
-| `btnColor`        | `string`                                        | `#e8e8e8` | Custom color for the button background (within the span)      |
-| `background`      | `string`                                        | `black`   | Custom color for the overall button background                |
-| `borderColor`     | `string`                                        | `black`   | Border color of the button                                    |
-| `size`            | `'2xl' \| 'xl' \| 'lg' \| 'md' \| 'sm'`         | `'md'`    | Size of the button (affects padding and border radius)        |
-| `additionalClass` | `string`                                        | `''`      | Additional custom class to apply to the button's root element |
-| `...props`        | `React.ButtonHTMLAttributes<HTMLButtonElement>` |           | Supports all native button attributes                         |
+| Prop                 | Type                                            | Default   | Description                                                   |
+| -------------------- | ----------------------------------------------- | --------- | ------------------------------------------------------------- |
+| `textColor`          | `string`                                        | `black`   | Custom color for the button text                              |
+| `btnColor`           | `string`                                        | `#e8e8e8` | Custom color for the button background (within the span)      |
+| `background`         | `string`                                        | `black`   | Custom color for the overall button background                |
+| `borderColor`        | `string`                                        | `black`   | Border color of the button                                    |
+| `size or toggleSize` | `'2xl' \| 'xl' \| 'lg' \| 'md' \| 'sm'`         | `'md'`    | Size of the button (affects padding and border radius)        |
+| `additionalClass`    | `string`                                        | `''`      | Additional custom class to apply to the button's root element |
+| `...props`           | `React.ButtonHTMLAttributes<HTMLButtonElement>` |           | Supports all native button attributes                         |
 
 #### 📦 Example Usage
 
-Here's how you can use the `MyButton` component in your project:
+Here's how you can use the `Button2D` and `Toggle2D` component in your project:
 
 ```jsx
 import React from 'react'
