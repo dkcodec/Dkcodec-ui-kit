@@ -1,6 +1,6 @@
 {
   "name": "dkcodec-ui-kit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "very simple but useful ui kit",
   "main": "./dist/index.js",
   "scripts": {
