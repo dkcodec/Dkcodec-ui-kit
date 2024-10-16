@@ -34,19 +34,19 @@ The `Button2D` component is a flexible and customizable button with several styl
 
 #### 📋 Props
 
-| Prop                 | Type                                            | Default   | Description                                                   |
-| -------------------- | ----------------------------------------------- | --------- | ------------------------------------------------------------- |
-| `textColor`          | `string`                                        | `black`   | Custom color for the button text                              |
-| `btnColor`           | `string`                                        | `#e8e8e8` | Custom color for the button background (within the span)      |
-| `background`         | `string`                                        | `black`   | Custom color for the overall button background                |
-| `borderColor`        | `string`                                        | `black`   | Border color of the button                                    |
-| `size or toggleSize` | `'2xl' \| 'xl' \| 'lg' \| 'md' \| 'sm'`         | `'md'`    | Size of the button (affects padding and border radius)        |
-| `additionalClass`    | `string`                                        | `''`      | Additional custom class to apply to the button's root element |
-| `...props`           | `React.ButtonHTMLAttributes<HTMLButtonElement>` |           | Supports all native button attributes                         |
+| Prop                 | Type                                            | Default   | Description                                                               |
+| -------------------- | ----------------------------------------------- | --------- | ------------------------------------------------------------------------- |
+| `textColor`          | `string`                                        | `black`   | Custom color for the button or toggle text                                |
+| `btnColor`           | `string`                                        | `#e8e8e8` | Custom color for the button or toggle background (within the span)        |
+| `background`         | `string`                                        | `black`   | Custom color for the overall button or toggle background                  |
+| `borderColor`        | `string`                                        | `black`   | Border color of the button                                                |
+| `size or toggleSize` | `'2xl' \| 'xl' \| 'lg' \| 'md' \| 'sm'`         | `'md'`    | Size of the button or toggle (affects padding and border radius)          |
+| `additionalClass`    | `string`                                        | `''`      | Additional custom class to apply to the button's or toggle's root element |
+| `...props`           | `React.ButtonHTMLAttributes<HTMLButtonElement>` |           | Supports all native button or toggle attributes                           |
 
 #### 📦 Example Usage
 
-Here's how you can use the `Button2D` and `Toggle2D` component in your project:
+Here's how you can use the `Button2D` and `Toggle2D` components in your project:
 
 ```jsx
 import React from 'react'
@@ -86,7 +86,7 @@ export default App
 
 #### 🎨 Customization
 
-You can customize the button by passing in props such as `size`, `textColor`, `btnColor`, and `background`. You can also add your own styles by passing an `additionalClass` for further styling via CSS.
+You can customize the button or toggle by passing in props such as `size`, `textColor`, `btnColor`, and `background`. You can also add your own styles by passing an `additionalClass` for further styling via CSS.
 
 For example:
 
@@ -106,7 +106,7 @@ For example:
 - `md`: Medium button (default)
 - `sm`: Small button
 
-Each size option adjusts the button's padding and border-radius to fit the design requirements.
+Each size option adjusts the button's or toggle's padding and border-radius to fit the design requirements.
 
 #### 🚀 Performance Tips
 
