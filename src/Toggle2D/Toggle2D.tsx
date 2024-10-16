@@ -20,31 +20,26 @@ const Toggle2D: FC<Toggle2DProps> = ({
   additionalClass = '',
   ...props
 }) => {
-  const rootClasses = ['switch']
-  let br = '1rem'
-
-  switch (toggleSize) {
-    case '2xl':
-      rootClasses.push('big-toggle-2xl')
-      br = '2rem'
-      break
-    case 'xl':
-      rootClasses.push('big-toggle-xl')
-      br = '1.5rem'
-      break
-    case 'lg':
-      rootClasses.push('big-toggle-lg')
-      br = '1.2rem'
-      break
-    case 'sm':
-      rootClasses.push('big-toggle-sm')
-      br = '0.75rem'
-      break
-    default:
-      rootClasses.push('big-toggle-md')
+  const sizeStyles: Record<string, { width: string; height: string }> = {
+    '2xl': { width: '6em', height: '3em' },
+    xl: { width: '5em', height: '2.5em' },
+    lg: { width: '4em', height: '2em' },
+    md: { width: '3em', height: '1.5em' },
+    sm: { width: '2em', height: '1em' },
   }
+
+  const selectedSize = sizeStyles[toggleSize] || sizeStyles.md
+
+  const switchStyles = {
+    '--switch-width': selectedSize.width,
+    '--switch-height': selectedSize.height,
+    '--thumb-color': btnColor || '#e8e8e8',
+    '--track-color': background || '#e8e8e8',
+    '--outline-color': borderColor,
+  } as React.CSSProperties
+
   return (
-    <label className={rootClasses.join(' ')}>
+    <label className={`switch ${additionalClass}`} style={switchStyles}>
       <input type='checkbox' {...props} />
       <span className='slider'></span>
     </label>
