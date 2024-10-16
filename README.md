@@ -50,16 +50,17 @@ Here's how you can use the `MyButton` component in your project:
 
 ```jsx
 import React from 'react'
-import MyButton from 'dkcodec-ui-kit'
+import Button2D from 'dkcodec-ui-kit'
+import Toggle2D from 'dkcodec-ui-kit'
 
 const App = () => {
   return (
     <div>
       {/* Basic button */}
-      <MyButton>Click me</MyButton>
+      <Button2D>Click me</Button2D>
 
       {/* Custom button with size and colors */}
-      <MyButton
+      <Button2D
         size='lg'
         textColor='darkblue'
         btnColor='lightblue'
@@ -67,12 +68,15 @@ const App = () => {
         background='darkblue'
       >
         Custom Button
-      </MyButton>
+      </Button2D>
 
       {/* Button with additional custom class */}
-      <MyButton size='sm' additionalClass='my-custom-class'>
+      <Button2D size='sm' additionalClass='my-custom-class'>
         Small Button
-      </MyButton>
+      </Button2D>
+
+      {/* Toggle Button*/}
+      <Toggle2D toggleSize='xl' />
     </div>
   )
 }
