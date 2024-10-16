@@ -20,9 +20,9 @@ npm install dkcodec-ui-kit
 
 ## 🖼️ Components
 
-### MyButton
+### Button2D, Toggle2D
 
-The `MyButton` component is a flexible and customizable button with several style options, built using React. It supports different sizes, colors, themes, and additional styles. Here's how to use it.
+The `Button2D` component is a flexible and customizable button with several style options, built using React. It supports different sizes, colors, themes, and additional styles. Here's how to use it.
 
 #### ✨ Features
 
@@ -34,32 +34,33 @@ The `MyButton` component is a flexible and customizable button with several styl
 
 #### 📋 Props
 
-| Prop              | Type                                            | Default   | Description                                                   |
-| ----------------- | ----------------------------------------------- | --------- | ------------------------------------------------------------- |
-| `textColor`       | `string`                                        | `black`   | Custom color for the button text                              |
-| `btnColor`        | `string`                                        | `#e8e8e8` | Custom color for the button background (within the span)      |
-| `background`      | `string`                                        | `black`   | Custom color for the overall button background                |
-| `borderColor`     | `string`                                        | `black`   | Border color of the button                                    |
-| `size`            | `'2xl' \| 'xl' \| 'lg' \| 'md' \| 'sm'`         | `'md'`    | Size of the button (affects padding and border radius)        |
-| `additionalClass` | `string`                                        | `''`      | Additional custom class to apply to the button's root element |
-| `...props`        | `React.ButtonHTMLAttributes<HTMLButtonElement>` |           | Supports all native button attributes                         |
+| Prop                 | Type                                            | Default   | Description                                                               |
+| -------------------- | ----------------------------------------------- | --------- | ------------------------------------------------------------------------- |
+| `textColor`          | `string`                                        | `black`   | Custom color for the button or toggle text                                |
+| `btnColor`           | `string`                                        | `#e8e8e8` | Custom color for the button or toggle background (within the span)        |
+| `background`         | `string`                                        | `black`   | Custom color for the overall button or toggle background                  |
+| `borderColor`        | `string`                                        | `black`   | Border color of the button                                                |
+| `size or toggleSize` | `'2xl' \| 'xl' \| 'lg' \| 'md' \| 'sm'`         | `'md'`    | Size of the button or toggle (affects padding and border radius)          |
+| `additionalClass`    | `string`                                        | `''`      | Additional custom class to apply to the button's or toggle's root element |
+| `...props`           | `React.ButtonHTMLAttributes<HTMLButtonElement>` |           | Supports all native button or toggle attributes                           |
 
 #### 📦 Example Usage
 
-Here's how you can use the `MyButton` component in your project:
+Here's how you can use the `Button2D` and `Toggle2D` components in your project:
 
 ```jsx
 import React from 'react'
-import MyButton from 'dkcodec-ui-kit'
+import Button2D from 'dkcodec-ui-kit'
+import Toggle2D from 'dkcodec-ui-kit'
 
 const App = () => {
   return (
     <div>
       {/* Basic button */}
-      <MyButton>Click me</MyButton>
+      <Button2D>Click me</Button2D>
 
       {/* Custom button with size and colors */}
-      <MyButton
+      <Button2D
         size='lg'
         textColor='darkblue'
         btnColor='lightblue'
@@ -67,12 +68,15 @@ const App = () => {
         background='darkblue'
       >
         Custom Button
-      </MyButton>
+      </Button2D>
 
       {/* Button with additional custom class */}
-      <MyButton size='sm' additionalClass='my-custom-class'>
+      <Button2D size='sm' additionalClass='my-custom-class'>
         Small Button
-      </MyButton>
+      </Button2D>
+
+      {/* Toggle Button*/}
+      <Toggle2D toggleSize='xl' />
     </div>
   )
 }
@@ -82,7 +86,7 @@ export default App
 
 #### 🎨 Customization
 
-You can customize the button by passing in props such as `size`, `textColor`, `btnColor`, and `background`. You can also add your own styles by passing an `additionalClass` for further styling via CSS.
+You can customize the button or toggle by passing in props such as `size`, `textColor`, `btnColor`, and `background`. You can also add your own styles by passing an `additionalClass` for further styling via CSS.
 
 For example:
 
@@ -102,7 +106,7 @@ For example:
 - `md`: Medium button (default)
 - `sm`: Small button
 
-Each size option adjusts the button's padding and border-radius to fit the design requirements.
+Each size option adjusts the button's or toggle's padding and border-radius to fit the design requirements.
 
 #### 🚀 Performance Tips
 
