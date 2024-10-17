@@ -1,0 +1,35 @@
+.input {
+  --input-width: 6em;
+  --input-height: 2em;
+  --input-color: #e8e8e8;
+  --text-color: #000;
+  --bg-color: #000;
+  --border-radius: 0.75em;
+
+  border: 2px solid var(--bg-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--input-color);
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-2xl {
+  font-size: 2em;
+}
+
+.input:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+.input:active .button_top {
+  transform: translateY(0);
+}
+
+.input::before {
+  outline-color: var(--bg-color);
+  background-color: var(--input-color);
+  color: var(--text-color);
+  box-shadow: 5px 5px (--bg-color);
+}

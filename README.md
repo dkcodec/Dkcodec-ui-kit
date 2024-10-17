@@ -50,8 +50,7 @@ Here's how you can use the `Button2D` and `Toggle2D` components in your project:
 
 ```jsx
 import React from 'react'
-import Button2D from 'dkcodec-ui-kit'
-import Toggle2D from 'dkcodec-ui-kit'
+import { Button2D, Toggle2D } from 'dkcodec-ui-kit'
 
 const App = () => {
   return (
