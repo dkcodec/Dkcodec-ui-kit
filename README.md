@@ -20,7 +20,7 @@ npm install dkcodec-ui-kit
 
 ## 🖼️ Components
 
-### Button2D, Toggle2D
+### Button2D, Toggle2D, Input2D
 
 The `Button2D` component is a flexible and customizable button with several style options, built using React. It supports different sizes, colors, themes, and additional styles. Here's how to use it.
 
@@ -50,7 +50,7 @@ Here's how you can use the `Button2D` and `Toggle2D` components in your project:
 
 ```jsx
 import React from 'react'
-import { Button2D, Toggle2D } from 'dkcodec-ui-kit'
+import { Button2D, Toggle2D, Input2D } from 'dkcodec-ui-kit'
 
 const App = () => {
   return (
@@ -76,6 +76,9 @@ const App = () => {
 
       {/* Toggle Button*/}
       <Toggle2D toggleSize='xl' />
+
+      {/* Input */}
+      <Input2D inputSize='xl'>
     </div>
   )
 }
