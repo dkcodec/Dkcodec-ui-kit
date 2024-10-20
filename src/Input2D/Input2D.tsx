@@ -22,11 +22,11 @@ const Input2D: FC<Input2DProps> = ({
   ...props
 }) => {
   const sizeStyles: Record<string, { width: string; height: string }> = {
-    '2xl': { width: '6em', height: '3em' },
-    xl: { width: '5em', height: '2.5em' },
-    lg: { width: '4em', height: '2em' },
-    md: { width: '3em', height: '1.5em' },
-    sm: { width: '2em', height: '1em' },
+    '2xl': { width: '28.75em', height: '4.4em' },
+    xl: { width: '21.95em', height: '3.9em' },
+    lg: { width: '18.87em', height: '3.5em' },
+    md: { width: '15.35em', height: '3.3em' },
+    sm: { width: '12.05em', height: '3em' },
   }
 
   const selectedSize = sizeStyles[inputSize] || sizeStyles.md
@@ -35,8 +35,8 @@ const Input2D: FC<Input2DProps> = ({
     '--input-width': selectedSize.width,
     '--input-height': selectedSize.height,
     '--input-color': inputColor || '#e8e8e8',
-    '--text-color': textColor || '#000',
-    '--bg-color': background || '#e8e8e8',
+    '--text-color': textColor || 'black',
+    '--bg-color': background || 'black',
   } as React.CSSProperties
 
   const classNames = ['input']
@@ -59,12 +59,14 @@ const Input2D: FC<Input2DProps> = ({
   }
 
   return (
-    <input
-      type={type}
-      placeholder={placeholder}
-      className={classNames.join(' ')}
-      style={inputStyles}
-    />
+    <div className='shadow' style={inputStyles}>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className={classNames.join(' ')}
+        style={inputStyles}
+      />
+    </div>
   )
 }
 

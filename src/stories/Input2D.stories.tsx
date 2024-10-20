@@ -11,7 +11,14 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const BaseBtn: Story = {
-  args: {},
+  args: {
+    textColor: 'orange',
+    placeholder: 'ASDASD',
+    background: 'green',
+    type: 'password',
+    inputColor: 'red',
+    inputSize: '2xl',
+  },
 }
 
 export const RedBtn: Story = {
