@@ -1,0 +1,75 @@
+.input {
+  --input-width: 6em;
+  --input-height: 2em;
+  --input-color: #e8e8e8;
+  --text-color: #000;
+  --bg-color: #000;
+  --border-radius: 00.75rem;
+
+  border: 2px solid var(--bg-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--input-color);
+
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+::placeholder {
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+::-ms-input-placeholder {
+  color: var(--text-color);
+}
+
+.shadow {
+  --border-radius: 0.75em;
+
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+
+  width: var(--input-width);
+  height: var(--input-height);
+}
+
+.input-2xl {
+  font-size: 2em;
+}
+
+.input-xl {
+  font-size: 1.5em;
+}
+
+.input-lg {
+  font-size: 1.25em;
+}
+
+.input-md {
+  font-size: 1em;
+}
+
+.input-sm {
+  font-size: 0.75em;
+}
+
+.input:hover {
+  transform: translateY(-0.33em);
+}
+
+.input:focus {
+  outline: none;
+  transform: translateY(0);
+}
+
+.input {
+  outline-color: var(--bg-color);
+  background-color: var(--input-color);
+  color: var(--text-color);
+
+  transform: translateY(-0.7em);
+
+  transition: transform 0.1s ease;
+}
